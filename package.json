@@ -1,0 +1,34 @@
+{
+  "name": "leads",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build src/index.html --dist-dir ./appscript",
+    "start": "parcel src/index.html --dist-dir ./appscript",
+    "deploy": "clasp push",
+    "predeploy": "npm run build",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title 'React-Appscript' --rootDir ./appscript",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gstart": "clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.55",
+    "autoprefixer": "^10.4.12",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.18",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "gas-client": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
