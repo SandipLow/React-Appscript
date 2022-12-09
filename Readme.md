@@ -25,11 +25,9 @@ It uses
 
         npm run glogin
 
-4. Create an Appscript project
+4. Setup an Appscript project
 
-        npm run gcreate
-
-5. Move ".clasp.json" from "./appscript" to root directory
+        npm run setup
 
 6. Start development by starting react
 
@@ -44,6 +42,7 @@ It uses
 - `gpull` : pull drive appscript code to './appscript' directory
 - `gpush` : push './appscript' directory to appscript file
 - `gstart` : push project to appscript whenever a file changes everytime (Though it is recommended to push optimised html file during production, Use it to test appscript server functions)
+- `setup` : all in one command that create an appscript project in Google Drive.
 - `start` : Start react code server locally.
 - `build` : build a single optimized html file.
 - `deploy` : build a single optimized html file then push to appscript.

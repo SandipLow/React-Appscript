@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import { server } from "../server"
 
-export default function Hello({ server }) {
+export default function Hello() {
 
     const [hello, setHello] = useState("Loading...")
 
