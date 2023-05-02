@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build src/index.html --dist-dir ./appscript",
-    "start": "parcel src/index.html --dist-dir ./appscript",
+    "build": "vite build --config vite.config.js",
+    "start": "vite --config vite.config.js",
     "deploy": "clasp push",
     "predeploy": "npm run build",
     "setup": "clasp create --title 'React-Appscript' --rootDir ./appscript && cp ./appscript/.clasp.json . && rm ./appscript/.clasp.json",
@@ -21,15 +21,17 @@
   "devDependencies": {
     "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.55",
-    "autoprefixer": "^10.4.12",
-    "parcel": "^2.7.0",
+    "autoprefixer": "^10.4.14",
     "postcss": "^8.4.18",
     "process": "^0.11.10",
-    "tailwindcss": "^3.2.1"
+    "tailwindcss": "^3.2.1",
+    "vite-plugin-singlefile": "^0.13.5"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
     "gas-client": "^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite": "^4.3.3"
   }
 }
